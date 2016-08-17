@@ -1,7 +1,15 @@
 require 'rails_helper'
 
 describe 'navigate' do
+  before do
+    user = User.create(email: "test2@test.com", password: "password", password_confirmation: "password", first_name: "Mickey", last_name: "Mouse")
+    login_as(user, :scope => :user)
+    visit new_post_path
+  end
+
   describe 'index' do
+    user = User.create(email: "test2@test.com", password: "password", password_confirmation: "password", first_name: "Mickey", last_name: "Mouse")
+    login_as(user, :scope => :user)
     it 'can be reached successfully' do
       visit posts_path
       expect(page.status_code).to eq(200)
