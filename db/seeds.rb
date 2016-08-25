@@ -3,7 +3,7 @@
 puts "1 User Created"
 
 100.times do |post|
-  Post.create!(date: Date.today, rationale: "#{post} rationale contet", user_id: @user.id)
+  Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: @user.id)
 end
 
 puts "100 Posts have been created"
