@@ -10,8 +10,8 @@
 ## Features
 - Approval Workflow
 - SMS Sending -> Link to approval or overtime report
-- Adminstrate admin dashboard
-- Block non admin and guest users
+- X Adminstrate admin dashboard
+- X Block non admin and guest users
 - Email summary to managers for approval
 - Needs to be documented if employee did not log overtime
 
