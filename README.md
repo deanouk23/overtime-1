@@ -16,18 +16,4 @@
 - Email summary to managers for approval
 - Needs to be documented if employee did not log overtime
 
-## UI:
-- X Bootstrap -> formatting
-- X Icons from glyph fonts
-- X Update the styles for forms
-
-## Refactor TODOS:
-- X Add Full Name method for users
-- X Refactor user association integration test in post_spec
-- X Refactor posts/_form for admin user with status
-- X Fix post_spec.rb: 82 to use factories
-- X Fix post.spec.rb: 56 to have correct user reference and not require update
-- Integrate validation for phone attr in User:
-  # No spaces or dashes
-  # exactly 10 characters
-  # all characters have to be a number
+## TODOS:
