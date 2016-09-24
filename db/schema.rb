@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160920221735) do
+ActiveRecord::Schema.define(version: 20160924015301) do
+
+  create_table "auditlogs", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "status",        default: 0
+    t.date     "start_date"
+    t.date     "date_verified"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.index ["user_id"], name: "index_auditlogs_on_user_id"
+  end
 
   create_table "posts", force: :cascade do |t|
     t.date     "date"
